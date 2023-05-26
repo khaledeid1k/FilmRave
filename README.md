@@ -1,7 +1,7 @@
 
 # FilmRave 🍿🎬
 
-![App Screenshot](https://github.com/SakshamSharma2026/FilmRave/blob/master/assets/app_banner.png?raw=true)
+![App Screenshot](https://github.com/SakshamSharma2026/FilmRave/blob/main/assets/app_banner.png?raw=true)
 
 Welcome to filmRave, the ultimate movie app for film lovers! With filmRave, you can easily discover new movies, manage your watchlist, and get detailed information about your favorite films, all in one convenient place.
 
