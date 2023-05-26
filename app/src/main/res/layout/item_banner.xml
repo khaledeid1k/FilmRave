@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220sdp"
+        android:background="@color/dark_gray"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/banner_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradient_bottom"
+            android:translationZ="@dimen/_72sdp" />
+
+
+        <TextView
+            android:id="@+id/banner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/banner_genres"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/_4sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            android:translationZ="@dimen/_92sdp"
+            tools:text="Explosive" />
+
+        <TextView
+            android:id="@+id/banner_genres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:paddingBottom="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8ssp"
+            android:translationZ="@dimen/_92sdp"
+            tools:text="Action • Explosive • Suspenseful • Exciting • Adventure" />
+
+    </RelativeLayout>
+</layout>
