@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_bg"
+        tools:context=".presentation.intro.IntroFragment">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_112sdp"
+            android:background="@drawable/gradient_top"
+            android:translationZ="@dimen/_72sdp"
+            app:layout_constraintTop_toTopOf="@id/intro_image" />
+
+        <ImageView
+            android:id="@+id/intro_image"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="@dimen/_430sdp"
+            android:src="@drawable/img_intro_one"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_220sdp"
+            android:background="@drawable/gradient_bottom"
+            android:translationZ="@dimen/_72sdp"
+            app:layout_constraintBottom_toBottomOf="@id/intro_image" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:translationZ="@dimen/_90sdp"
+            app:layout_constraintBottom_toTopOf="@id/continue_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_22ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/endless_entertainment_for_everyone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:paddingVertical="@dimen/_10sdp"
+                android:text="@string/app_terms"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/_8ssp" />
+        </LinearLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/continue_btn"
+            style="@style/Widget.Material3.CardView.Elevated"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            app:cardBackgroundColor="@color/navy_blue"
+            app:cardCornerRadius="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="@string/continue_btn"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
